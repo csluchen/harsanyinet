@@ -12,20 +12,41 @@ pip install git+https://github.com/csluchen/harsanyinet
 
 
 
-## How to use
+## How to use easily
 ### HarsanyiNet-CNN
 To train CIFAR-10 dataset easily, you can use the following code:
 
 `
 python train.py
 `
+Or you can directly access the trained model in path A.
 
 To train MNIST dataset easily, you can use the following code:
 
 `python train.py --dataset='MNIST'`
 
+Or you can directly access the trained model in path B.
+
+Now you can use the HarsanyiNet to compute the Shapley values in a single forward propagation, you can use the following code:
+
+`
+python shapley.py ....
+`
+
+
+
+
 
 ### HarsanyiNet-MLP
+
+
+
+## More details
+If you want to train a tranditional DNN with comparable size, you can use the following code:
+
+`
+python train.py --comparable_DNN
+`
 
 
 
