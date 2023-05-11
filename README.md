@@ -6,7 +6,11 @@ HarsanyiNet is an interpretable network architecture, which makes inferences on 
 ## Install
 HarsanyiNet can be installed in the Python 3 environment:
 
-`pip install git+https://github.com/csluchen/harsanyinet`
+`
+
+pip install git+https://github.com/csluchen/harsanyinet
+
+`
 
 
 
@@ -14,7 +18,9 @@ HarsanyiNet can be installed in the Python 3 environment:
 ### HarsanyiNet-CNN
 To train CIFAR-10 dataset quickly, you can use the following code:
 
-`python train.py`
+`
+python train.py
+`
 
 To train MNIST dataset quickly, you can use the following code:
 
