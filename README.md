@@ -7,9 +7,7 @@ HarsanyiNet is an interpretable network architecture, which makes inferences on 
 HarsanyiNet can be installed in the Python 3 environment:
 
 `
-
 pip install git+https://github.com/csluchen/harsanyinet
-
 `
 
 
