@@ -32,7 +32,7 @@ Or you can directly access the pre-trained HarsanyiNet in path B.
 Now you can use the HarsanyiNet to compute the Shapley values in a single forward propagation, you can use the following code like:
 
 `
-python shapley.py --model_path='layers10_channels256_beta1000_gamma1'
+python shapley.py 
 `
 
 
@@ -49,7 +49,7 @@ python shapley.py --model_path='layers10_channels256_beta1000_gamma1'
 If you want to compute the root mean squared error (RMSE) between the Shapley values computed by HarsanyiNet and that computed by sampling method, you can use the following code:
 
 `
-python shapley.py --model_path='layers10_channels256_beta1000_gamma1' --sampling=True --runs=2000
+python shapley.py --sampling=True --runs=2000
 `
 
 Or you can directly access the sampling result in path C.
