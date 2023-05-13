@@ -14,7 +14,7 @@ pip install git+https://github.com/csluchen/harsanyinet
 
 ## How to use easily
 ### HarsanyiNet-CNN
-#### Get HarsanyiNet
+#### Get HarsanyiNet model
 To train CIFAR-10 dataset easily, you can use the following code:
 
 `
