@@ -14,6 +14,7 @@ pip install git+https://github.com/csluchen/harsanyinet
 
 ## How to use easily
 ### HarsanyiNet-CNN
+#### Get HarsanyiNet
 To train CIFAR-10 dataset easily, you can use the following code:
 
 `
@@ -27,6 +28,7 @@ To train MNIST dataset easily, you can use the following code:
 
 Or you can directly access the pre-trained HarsanyiNet in path B.
 
+#### Compute Shapley values by HarsanyiNet
 Now you can use the HarsanyiNet to compute the Shapley values in a single forward propagation, you can use the following code like:
 
 `
@@ -42,6 +44,8 @@ python shapley.py --model_path='layers10_channels256_beta1000_gamma1'
 
 
 ## More details
+#### Compare Shapley values computed by HarsanyiNet and Sampling method
+
 If you want to compute the root mean squared error (RMSE) between the Shapley values computed by HarsanyiNet and that computed by sampling method, you can use the following code:
 
 `
