@@ -27,10 +27,10 @@ To train MNIST dataset easily, you can use the following code:
 
 Or you can directly access the trained model in path B.
 
-Now you can use the HarsanyiNet to compute the Shapley values in a single forward propagation, you can use the following code:
+Now you can use the HarsanyiNet to compute the Shapley values in a single forward propagation, you can use:
 
 `
-python shapley.py ....
+python shapley.py --model_path='layers10_channels256_beta1000_gamma1'
 `
 
 
@@ -47,6 +47,8 @@ If you want to train a tranditional DNN with comparable size, you can use the fo
 `
 python train.py --comparable_DNN
 `
+
+If you want to compare the Shapley values calculated by the HarsanyiNet with 
 
 
 
