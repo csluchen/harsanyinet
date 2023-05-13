@@ -44,7 +44,7 @@ python shapley.py
 
 
 ## More details
-#### Compare Shapley values computed by HarsanyiNet and Sampling method
+#### Compare Shapley values computed by HarsanyiNet and Other methods
 
 If you want to compute the root mean squared error (RMSE) between the Shapley values computed by HarsanyiNet and that computed by sampling method, you can use the following code:
 
@@ -55,6 +55,11 @@ python shapley.py --sampling=True --runs=2000
 Or you can directly access the sampling result in path C.
 
 
+
+For image dataset, if you want to compute the root mean squared error (RMSE) between the Shapley values computed by HarsanyiNet and that computed by sampling method, you can use the following code:
+`
+python shapley.py ...
+`
 
 
 ## Sample notebooks
