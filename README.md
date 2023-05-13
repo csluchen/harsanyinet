@@ -43,9 +43,11 @@ python shapley.py --model_path='layers10_channels256_beta1000_gamma1'
 
 ## More details
 If you want to compute the root mean squared error (RMSE) between the Shapley values computed by HarsanyiNet and that computed by sampling method, you can use the following code:
+
 `
 python shapley.py --model_path='layers10_channels256_beta1000_gamma1' --sampling=True --runs=2000
 `
+
 Or you can directly access the sampling result in path C.
 
 
