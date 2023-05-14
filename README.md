@@ -20,7 +20,7 @@ pip install torchtoolbox
 
 ## How to use 
 ### HarsanyiNet-CNN
-To train CIFAR-10 dataset easily, you can use the following code:
+To train CIFAR-10 dataset, you can use the following code:
 
 `
 python train.py
@@ -28,7 +28,7 @@ python train.py
 
 Or you can directly access the pre-trained HarsanyiNet in path `A`.
 
-To train MNIST dataset easily, you can use the following code:
+To train MNIST dataset, use the following code:
 
 `python train.py --dataset='MNIST'`
 
@@ -38,7 +38,7 @@ Or you can directly access the pre-trained HarsanyiNet in path `B`.
 To compute Shapley values using HarsanyiNet in a single forward propagation, use the following code:
 
 `
-python shapley.py 
+python shapley.py --model_path 'layers10_channels256_beta1000_gamma1'
 `
 
 
