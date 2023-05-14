@@ -65,6 +65,7 @@ Or you can directly access the sampling result in path `C`.
 
 
 For image dataset, if you want to compute the root mean squared error (RMSE) between the Shapley values computed by HarsanyiNet and that computed by sampling method, you can use the following code:
+
 `
 python shapley.py ...
 `
