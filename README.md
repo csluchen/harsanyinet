@@ -18,7 +18,7 @@ pip install torchtoolbox
 
 
 
-## How to use easily
+## How to use 
 ### HarsanyiNet-CNN
 #### Get HarsanyiNet model
 To train CIFAR-10 dataset easily, you can use the following code:
