@@ -20,15 +20,6 @@ pip install torchtoolbox
 
 ## How to use 
 ### HarsanyiNet-CNN
-# Datasets
-
-We provide implementation on three different tabular datasets from UCI repository, including
-
-- [Census income](https://archive.ics.uci.edu/ml/datasets/census+income)
-- [Yeast](https://archive.ics.uci.edu/ml/datasets/Yeast) 
-- [Commercial (TV News)](http://archive.ics.uci.edu/ml/datasets/tv+news+channel+commercial+detection+dataset) 
-
-# Getting Started
 To train CIFAR-10 dataset easily, you can use the following code:
 
 `
