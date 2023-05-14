@@ -37,7 +37,7 @@ To train MNIST dataset easily, you can use the following code:
 Or you can directly access the pre-trained HarsanyiNet in path `B`.
 
 #### Compute Shapley values by HarsanyiNet
-Now you can use the HarsanyiNet to compute the Shapley values in a single forward propagation, you can use the following code like:
+Now you can use the trained HarsanyiNet to compute the Shapley values in a single forward propagation, you can use the following code like:
 
 `
 python shapley.py 
