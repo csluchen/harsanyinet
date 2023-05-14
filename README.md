@@ -20,7 +20,15 @@ pip install torchtoolbox
 
 ## How to use 
 ### HarsanyiNet-CNN
-#### Get HarsanyiNet model
+### Datasets
+
+We provide implementation on three different tabular datasets from UCI repository, including
+
+- [Census income](https://archive.ics.uci.edu/ml/datasets/census+income)
+- [Yeast](https://archive.ics.uci.edu/ml/datasets/Yeast) 
+- [Commercial (TV News)](http://archive.ics.uci.edu/ml/datasets/tv+news+channel+commercial+detection+dataset) 
+
+### Getting Started
 To train CIFAR-10 dataset easily, you can use the following code:
 
 `
@@ -36,8 +44,7 @@ To train MNIST dataset easily, you can use the following code:
 
 Or you can directly access the pre-trained HarsanyiNet in path `B`.
 
-#### Compute Shapley values by HarsanyiNet
-Now you can use the trained HarsanyiNet to compute the Shapley values in a single forward propagation, you can use the following code like:
+To compute Shapley values using HarsanyiNet in a single forward propagation, use the following code:
 
 `
 python shapley.py 
