@@ -9,6 +9,7 @@ HarsanyiNet can be installed in the Python 3 environment:
 `
 pip install git+https://github.com/csluchen/harsanyinet
 `
+
 In addition, the `torchtoolbox` package needs to be installed:
 
 `
