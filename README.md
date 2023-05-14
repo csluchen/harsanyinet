@@ -25,7 +25,7 @@ To train the model, you can use the following code:
 - CIFAR-10 dataset `python train.py`
 - MNIST dataset `python train.py --dataset='MNIST'`
 
-or you can directly access the pre-trained HarsanyiNet in path `A`(CIFAR-10) and path `B`(MNIST).
+or you can directly access the pre-trained HarsanyiNet in path `A`(CIFAR-10) or path `B`(MNIST).
 
 To compute Shapley values using HarsanyiNet in a single forward propagation, use the following code:
 
@@ -76,7 +76,7 @@ To compute the root mean squared error (RMSE) between the Shapley values compute
 python shapley.py --sampling=True --runs=2000
 `
 
-Or you can directly access the sampling result in path `C`(2000 iterations) and `D`(20000 iterations).
+Or you can directly access the sampling result in path `C`(2000 iterations) or `D`(20000 iterations).
 
 
 To compute the root mean squared error (RMSE) between the Shapley values computed by HarsanyiNet and ground-truth Shapley values, use the following code:
