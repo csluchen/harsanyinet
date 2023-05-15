@@ -68,28 +68,25 @@ To compute Shapley values using HarsanyiNet in a single forward propagation, use
 
 
 ## More details
-#### Compare Shapley values computed by HarsanyiNet and Other methods
+#### Comparing Shapley values computed by HarsanyiNet and other methods
 
-To compute the root mean squared error (RMSE) between the Shapley values computed by HarsanyiNet and that computed by sampling method, use the following code:
+To compute the root mean squared error (RMSE) between the Shapley values computed by HarsanyiNet and sampling method, use the following code:
 
 `
-python shapley.py --sampling=True --runs=2000
+python shapley.py --sampling=True --runs=20000
 `
 
-Or you can directly access the sampling result in path `C`(2000 iterations) or `D`(20000 iterations).
-
-
-To compute the root mean squared error (RMSE) between the Shapley values computed by HarsanyiNet and ground-truth Shapley values, use the following code:
+To compute the RMSE between the Shapley values computed by HarsanyiNet and ground-truth Shapley values, use the following code:
 
 `
 python shapley.py --ground_truth=True
 `
 
 
-
 ## Sample notebooks
 
-We provide a Jupyter notebook for the Census dataset for calculating Shapley values via HarsanyiNet under `notebooks/Census.ipynb`
+For image dataset, we provide a Jupyter notebook for the `CIFAR-10` and `MNIST` dataset for calculating Shapley values via HarsanyiNet under `notebooks/CIFAR-10.ipynb` and `notebooks/MNIST.ipynb`, respectively.
+For tabular dataset, we provide a Jupyter notebook for the Census dataset for calculating Shapley values via HarsanyiNet under `notebooks/Census.ipynb`
 
 
 ## Citations
