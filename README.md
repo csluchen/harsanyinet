@@ -98,7 +98,7 @@ python shapley_tabular.py --harsanyinet --model_path model_pth/Census.pth
 
 
 ## More details
-#### Comparing Shapley values computed by HarsanyiNet and other methods
+### Comparing Shapley values computed by HarsanyiNet and other methods
 
 To compute the root mean squared error (RMSE) between the Shapley values computed by HarsanyiNet and sampling method, use the following code:
 
