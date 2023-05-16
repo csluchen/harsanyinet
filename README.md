@@ -23,7 +23,7 @@ pip install torchtoolbox
 To train the model, you can use the following code:
 
 - CIFAR-10 dataset `python train.py`
-- MNIST dataset `python train.py --dataset='MNIST'`
+- MNIST dataset `python train.py --dataset='MNIST'` --num_layers=4 --channels=32 --beta=100 --gamma=0.05
 
 or you can directly access the pre-trained HarsanyiNet in path `A`(CIFAR-10) or path `B`(MNIST).
 
