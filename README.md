@@ -7,15 +7,20 @@ HarsanyiNet is an interpretable network architecture, which makes inferences on 
 HarsanyiNet can be installed in the Python 3 environment:
 
 ```
-pip install git+https://github.com/csluchen/harsanyinet
+pip3 install git+https://github.com/csluchen/harsanyinet
 ```
 
-In addition, the `torchtoolbox` package needs to be installed:
+The `torchtoolbox` package also needs to be installed:
 
 ```
-pip install torchtoolbox
+pip3 install torchtoolbox
 ```
 
+Besides, if you want to compare HarsanyiNet with other methods, please install the following dependencies.
+
+```
+pip3 install -r requirements.txt
+```
 
 
 ## How to use 
