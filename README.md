@@ -41,7 +41,7 @@ python train.py --dataset='MNIST' --num_layers=4 --channels=32 --beta=100 --gamm
 
 or directly access the pre-trained HarsanyiNet in path ```./output/{DATASET}/.../model_pths/{DATASET}.pth```.
 
-To compute Shapley values using HarsanyiNet in a single forward propagation, use the following code:
+To compute Shapley values using HarsanyiNet in a single forward propagation, use code similar to the following:
 
 ```
 python shapley.py --model_path='model_pths/CIFAR10.pth' --num_layers=10 --channels=256 --beta=1000 --gamma=1 
