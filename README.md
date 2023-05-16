@@ -30,7 +30,7 @@ or you can directly access the pre-trained HarsanyiNet in path `A`(CIFAR-10) or 
 To compute Shapley values using HarsanyiNet in a single forward propagation, use the following code:
 
 `
-python shapley.py --model_path 'layers10_channels256_beta1000_gamma1'
+python shapley.py --model_path='layers10_channels256_beta1000_gamma1/model_pths/CIFAR10.pth' --num_layers=10 --channels=256 --beta=1000 --gamma=1 
 `
 
 
