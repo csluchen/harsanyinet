@@ -25,7 +25,7 @@ pip3 install -r requirements.txt
 
 ## How to use 
 ### HarsanyiNet-CNN
-To train the model, you can run codes like the following:
+To train the model, you can use codes like the following:
 
 - CIFAR-10 dataset 
 
