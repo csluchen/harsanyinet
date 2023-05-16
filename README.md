@@ -26,7 +26,7 @@ To train the model, you can use the following code:
 - MNIST dataset 
   `python train.py --dataset='MNIST' --num_layers=4 --channels=32 --beta=100 --gamma=0.05`
 
-or you can directly access the pre-trained HarsanyiNet in path `./output/{DATASET}/.../model_pths/`.
+or you can directly access the pre-trained HarsanyiNet in path `./output/{DATASET}/.../model_pths/{DATASET}.pth`.
 
 To compute Shapley values using HarsanyiNet in a single forward propagation, use the following code:
 
