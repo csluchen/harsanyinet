@@ -30,8 +30,7 @@ or you can directly access the pre-trained HarsanyiNet in path `A`(CIFAR-10) or 
 To compute Shapley values using HarsanyiNet in a single forward propagation, use the following code:
 
 `
-python shapley.py --model_path='model_pths/CIFAR10.pth' 
-                  --num_layers=10 --channels=256 --beta=1000 --gamma=1 
+python shapley.py --model_path='model_pths/CIFAR10.pth' --num_layers=10 --channels=256 --beta=1000 --gamma=1 
 `
 
 
@@ -77,6 +76,8 @@ To compute the root mean squared error (RMSE) between the Shapley values compute
 python shapley.py --sampling=True --runs=20000
 `
 
+Note that the larger the number of iterations (runs) of the sampling method, the longer it takes for the code to run.
+
 To compute the RMSE between the Shapley values computed by HarsanyiNet and ground-truth Shapley values, use the following code:
 
 `
@@ -87,6 +88,7 @@ python shapley.py --ground_truth=True
 ## Sample notebooks
 
 For image dataset, we provide a Jupyter notebook for the `CIFAR-10` and `MNIST` dataset for calculating Shapley values via HarsanyiNet under `notebooks/CIFAR-10.ipynb` and `notebooks/MNIST.ipynb`, respectively.
+
 For tabular dataset, we provide a Jupyter notebook for the Census dataset for calculating Shapley values via HarsanyiNet under `notebooks/Census.ipynb`
 
 
