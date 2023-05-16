@@ -1,20 +1,20 @@
 # HarsanyiNet
 This repository contains the Python implementation for HarsanyiNet, "HarsanyiNet: Computing Accurate Shapley Values in a Single Forward Propagation", ICML 2023.
 
-HarsanyiNet is an interpretable network architecture, which makes inferences on the input sample and simultaneously computes the exact Shapley values of the input variables in a single forward propagation (see [papers]() for details and citations).
+HarsanyiNet is an interpretable network architecture, which makes inferences on the input sample and simultaneously computes the exact Shapley values of the input variables in a single forward propagation (see [papers](https://arxiv.org/abs/2304.01811) for details and citations).
 
 ## Install
 HarsanyiNet can be installed in the Python 3 environment:
 
-`
+```
 pip install git+https://github.com/csluchen/harsanyinet
-`
+```
 
 In addition, the `torchtoolbox` package needs to be installed:
 
-`
+```
 pip install torchtoolbox
-`
+```
 
 
 
@@ -26,13 +26,13 @@ To train the model, you can use the following code:
 - MNIST dataset 
   `python train.py --dataset='MNIST' --num_layers=4 --channels=32 --beta=100 --gamma=0.05`
 
-or you can directly access the pre-trained HarsanyiNet in path `./output/{DATASET}/.../model_pths/{DATASET}.pth`.
+or you can directly access the pre-trained HarsanyiNet in path ```./output/{DATASET}/.../model_pths/{DATASET}.pth```.
 
 To compute Shapley values using HarsanyiNet in a single forward propagation, use the following code:
 
-`
+```
 python shapley.py --model_path='model_pths/CIFAR10.pth' --num_layers=10 --channels=256 --beta=1000 --gamma=1 
-`
+```
 
 
 
@@ -54,9 +54,9 @@ To get started, you can run `python utils/tabular/data_preprocess.py` to downloa
 
 To train the model, use the following code:
 
-- Census dataset `python train_tabular.py`
-- Yeast dataset `python train_tabular.py --dataset Yeast --n_attributes 8`
-- Commercial (TV News) dataset `python train_tabular.py --dataset Commercial --n_attributes 10`
+- Census dataset ```python train_tabular.py```
+- Yeast dataset ```python train_tabular.py --dataset Yeast --n_attributes 8```
+- Commercial (TV News) dataset ```python train_tabular.py --dataset Commercial --n_attributes 10```
 
 We also provide the trained models under `model_pth/` (please note that the Yeast and Commercial dataset don't have official data splits. We randomly split the whole dataset into 80% training data and 20% testing data. Therefore, the results may vary.)
 
@@ -73,28 +73,28 @@ To compute Shapley values using HarsanyiNet in a single forward propagation, use
 
 To compute the root mean squared error (RMSE) between the Shapley values computed by HarsanyiNet and sampling method, use the following code:
 
-`
+```
 python shapley.py --sampling=True --runs=20000
-`
+```
 
 Note that the larger the number of iterations (runs) of the sampling method, the more accurate the sampling method is and the longer it takes for the code to run.
 
 To compute the RMSE between the Shapley values computed by HarsanyiNet and ground-truth Shapley values, use the following code:
 
-`
+```
 python shapley.py --ground_truth=True
-`
+```
 
 
 ## Sample notebooks
 
-For image dataset, we provide a Jupyter notebook for the `CIFAR-10` and `MNIST` dataset for calculating Shapley values via HarsanyiNet under `notebooks/CIFAR-10.ipynb` and `notebooks/MNIST.ipynb`, respectively.
+For image dataset, we provide a Jupyter notebook for the `CIFAR-10` and `MNIST` dataset for calculating Shapley values via HarsanyiNet under ```notebooks/CIFAR-10.ipynb``` and ```notebooks/MNIST.ipynb```, respectively.
 
-For tabular dataset, we provide a Jupyter notebook for the Census dataset for calculating Shapley values via HarsanyiNet under `notebooks/Census.ipynb`
+For tabular dataset, we provide a Jupyter notebook for the Census dataset for calculating Shapley values via HarsanyiNet under ```notebooks/Census.ipynb```
 
 
 ## Citations
-`
+```
 @InProceedings{chen23,
   title = 	 {HarsanyiNet: Computing Accurate Shapley Values in a Single Forward Propagation},
   
@@ -104,4 +104,4 @@ For tabular dataset, we provide a Jupyter notebook for the Census dataset for ca
   
   year = 	 {2023}
 }
-`
+```
