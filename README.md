@@ -76,7 +76,7 @@ To compute the root mean squared error (RMSE) between the Shapley values compute
 python shapley.py --sampling=True --runs=20000
 `
 
-Note that the larger the number of iterations (runs) of the sampling method, the longer it takes for the code to run.
+Note that the larger the number of iterations (runs) of the sampling method, the more accurate the sampling method is and the longer it takes for the code to run.
 
 To compute the RMSE between the Shapley values computed by HarsanyiNet and ground-truth Shapley values, use the following code:
 
