@@ -34,7 +34,7 @@ python train.py
 python train.py --dataset='MNIST' --num_layers=4 --channels=32 --beta=100 --gamma=0.05
 ```
 
-or you can directly access the pre-trained HarsanyiNet in path ```./output/{DATASET}/.../model_pths/{DATASET}.pth```.
+or directly access the pre-trained HarsanyiNet in path ```./output/{DATASET}/.../model_pths/{DATASET}.pth```.
 
 To compute Shapley values using HarsanyiNet in a single forward propagation, use the following code:
 
@@ -123,6 +123,6 @@ For tabular dataset, we provide a Jupyter notebook for the Census dataset for ca
   title = {HarsanyiNet: Computing Accurate Shapley Values in a Single Forward Propagation},
   author = {Lu, Chen and Siyu, Lou and Keyan, Zhang and Jin, Huang and Quanshi, Zhang},
   booktitle = {Proceedings of the 40th International Conference on Machine Learning},
-  year = 	 {2023}
+  year = {2023}
 }
 ```
