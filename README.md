@@ -95,12 +95,13 @@ For tabular dataset, we provide a Jupyter notebook for the Census dataset for ca
 
 ## Citations
 `
-
 @InProceedings{chen23,
   title = 	 {HarsanyiNet: Computing Accurate Shapley Values in a Single Forward Propagation},
+  
   author = 	 {Lu, Chen and Siyu, Lou and Keyan, Zhang and Jin, Huang and Quanshi, Zhang},
+  
   booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  
   year = 	 {2023}
 }
-
 `
