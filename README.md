@@ -22,9 +22,17 @@ pip install torchtoolbox
 ### HarsanyiNet-CNN
 To train the model, you can use the following code:
 
-- CIFAR-10 dataset ```python train.py```
+- CIFAR-10 dataset 
+
+```
+python train.py
+```
+
 - MNIST dataset 
-  ```python train.py --dataset='MNIST' --num_layers=4 --channels=32 --beta=100 --gamma=0.05```
+
+```
+python train.py --dataset='MNIST' --num_layers=4 --channels=32 --beta=100 --gamma=0.05
+```
 
 or you can directly access the pre-trained HarsanyiNet in path ```./output/{DATASET}/.../model_pths/{DATASET}.pth```.
 
@@ -54,9 +62,23 @@ To get started, you can run ```python utils/tabular/data_preprocess.py``` to dow
 
 To train the model, use the following code:
 
-- Census dataset ```python train_tabular.py```
-- Yeast dataset ```python train_tabular.py --dataset Yeast --n_attributes 8```
-- Commercial (TV News) dataset ```python train_tabular.py --dataset Commercial --n_attributes 10```
+- Census dataset
+
+```
+python train_tabular.py
+```
+
+- Yeast dataset 
+
+```
+python train_tabular.py --dataset Yeast --n_attributes 8
+```
+
+- Commercial (TV News) dataset 
+
+```
+python train_tabular.py --dataset Commercial --n_attributes 10
+```
 
 We also provide the trained models under ```model_pth/``` (please note that the Yeast and Commercial dataset don't have official data splits. We randomly split the whole dataset into 80% training data and 20% testing data. Therefore, the results may vary.)
 
@@ -64,7 +86,9 @@ We also provide the trained models under ```model_pth/``` (please note that the 
 
 To compute Shapley values using HarsanyiNet in a single forward propagation, use the following code:
 
-```python shapley_tabular.py --harsanyinet --model_path model_pth/Census.pth```
+```
+python shapley_tabular.py --harsanyinet --model_path model_pth/Census.pth
+```
 
 
 
@@ -96,12 +120,9 @@ For tabular dataset, we provide a Jupyter notebook for the Census dataset for ca
 ## Citations
 ```
 @InProceedings{chen23,
-  title = 	 {HarsanyiNet: Computing Accurate Shapley Values in a Single Forward Propagation},
-  
-  author = 	 {Lu, Chen and Siyu, Lou and Keyan, Zhang and Jin, Huang and Quanshi, Zhang},
-  
-  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
-  
+  title = {HarsanyiNet: Computing Accurate Shapley Values in a Single Forward Propagation},
+  author = {Lu, Chen and Siyu, Lou and Keyan, Zhang and Jin, Huang and Quanshi, Zhang},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
   year = 	 {2023}
 }
 ```
