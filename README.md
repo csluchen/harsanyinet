@@ -119,7 +119,7 @@ python shapley.py --ground_truth=True
 
 For image dataset, we provide a Jupyter notebook for the `CIFAR-10` and `MNIST` dataset for calculating Shapley values via HarsanyiNet under ```notebooks/CIFAR-10.ipynb``` and ```notebooks/MNIST.ipynb```, respectively.
 
-For tabular dataset, we provide a Jupyter notebook for the Census dataset for calculating Shapley values via HarsanyiNet under ```notebooks/Census.ipynb```
+For tabular dataset, we provide a Jupyter notebook for the `Census` dataset for calculating Shapley values via HarsanyiNet under ```notebooks/Census.ipynb```
 
 
 ## Citations
