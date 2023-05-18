@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import torch
-from shapreg import removal, games, shapley
+from utils.tabular.shapreg import removal, games, shapley
 
 from utils.attribute import HarsanyiMLPAttribute
 from utils.tabular.shap_util import brute_force_shapley, ShapSampling, ShapKernel, permutation_sample_parallel

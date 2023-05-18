@@ -16,9 +16,11 @@ The `torchtoolbox` package also needs to be installed:
 pip3 install torchtoolbox
 ```
 
-Besides, if you want to compare HarsanyiNet with other methods, please install the following dependencies.
+You may also use conda environment 
 
 ```
+conda create --name harsanyinet python=3.9
+conda activate harsanyinet
 pip3 install -r requirements.txt
 ```
 
@@ -93,15 +95,15 @@ To compute Shapley values using HarsanyiNet in a single forward propagation, use
 
 - Census
 ```
-python shapley_tabular.py --harsanyinet 
+python shapley_tabular.py --model_path pretrained_models/tabular/Census.pth
 ```
 - Yeast
 ```
-   python shapley_tabular.py --dataset Yeast --n_attributes 8 --harsanyinet
+   python shapley_tabular.py --dataset Yeast --n_attributes 8
 ```
-- Commercial
+- Commercial (TV News)
 ```
-   python shapley_tabular.py --dataset Commercial --n_attributes 10 --harsanyinet
+   python shapley_tabular.py --dataset Commercial --n_attributes 10
 ```
 
 

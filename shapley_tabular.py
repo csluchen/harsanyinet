@@ -3,8 +3,6 @@ import argparse
 import torch
 import numpy as np
 
-from shapreg import removal, games, shapley
-
 from model.HarsanyiMLP import HarsanyiNet
 from utils.data import get_data_loader
 from utils.seed import setup_seed
@@ -35,7 +33,7 @@ parser.add_argument('--comparable_DNN', action='store_true', default=False, help
 
 # parameters for attribution
 parser.add_argument('--num_samples', type=int, default=10, help="number of samples to be explained")
-parser.add_argument('--harsanyinet', action='store_true', default=False, help="whether to use HarsanyiNet to compute Shapley values.")
+parser.add_argument('--harsanyinet', action='store_false', default=True, help="whether to use HarsanyiNet to compute Shapley values.")
 parser.add_argument('--others', action='store_true', default=False, help="whether to use sampling/kernelshap to compute Shapley values.")
 parser.add_argument('--runs', type=int, default=200, help="number of iterations if using Sampling/kernelshap method")  # 2000
 parser.add_argument('--test_acc', action='store_true', default=False, help="whether to test the classification accuracy of the model")
