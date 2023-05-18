@@ -104,7 +104,7 @@ def train(args,
 
         # save model
         if (epoch + 1) % 100 == 0 or (epoch + 1) == args.epochs:
-            model_path = os.path.join(args.model_path, 'epoch' + str(epoch) + '.pth')
+            model_path = os.path.join(args.model_path, f'{args.dataset}.pth')
             torch.save(model.state_dict(), model_path)
             # plot loss and accuracy
             plot_loss_acc(args, train_loss, test_loss, train_acc, test_acc)

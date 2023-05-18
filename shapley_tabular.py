@@ -75,7 +75,7 @@ def init_path(args):
     if not os.path.exists(args.acc_path):
         os.makedirs(args.acc_path)
     if len(args.model_path) == 0:
-        args.model_path = os.path.join(args.save_path, 'model_pths',f'epoch{args.epochs-1}.pth')
+        args.model_path = os.path.join(args.save_path, 'model_pths',f'{args.dataset}.pth')
  
     print("Load model path:", args.model_path)
 
