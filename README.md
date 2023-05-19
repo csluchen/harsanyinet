@@ -87,16 +87,23 @@ python train_tabular.py --dataset Yeast --n_attributes 8
 python train_tabular.py --dataset Commercial --n_attributes 10
 ```
 
-(please note that the Yeast and Commercial dataset don't have official data splits. We randomly split the whole dataset into 80% training data and 20% testing data. Therefore, the results may vary.)
+Note: 
+  - For the Census dataset, we provide the pretrained model under `pretrained_model/Census.pth`.
+  - For the Yeast and Commercial dataset, we do not provide the pretrained models, beacuse both of the datasets don't have official data splits. We randomly split the whole dataset into 80% training data and 20% testing data. 
 
 
 
 To compute Shapley values using HarsanyiNet in a single forward propagation, use the following code:
 
 - Census
-```
-python shapley_tabular.py --model_path pretrained_models/tabular/Census.pth
-```
+  - using the provided pretrained_model:
+  ```
+  python shapley_tabular.py --model_path pretrained_model/Census.pth
+  ```
+  - if you have trained your own model
+  ```
+   python shapley_tabular.py
+   ```
 - Yeast
 ```
    python shapley_tabular.py --dataset Yeast --n_attributes 8
