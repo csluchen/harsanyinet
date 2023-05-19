@@ -46,7 +46,7 @@ or directly access the pre-trained HarsanyiNet in [Google Drive](https://drive.g
 To compute Shapley values using HarsanyiNet in a single forward propagation, use codes like the following:
 
 ```
-python shapley.py --model_path='model_pths/CIFAR10.pth' --num_layers=10 --channels=256 --beta=1000 --gamma=1 
+python shapley.py --save_path='./pretrained_model' --model_path='model_pths/CIFAR10.pth' --num_layers=10 --channels=256 --beta=1000 --gamma=1 
 ```
 
 
