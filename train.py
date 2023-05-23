@@ -120,9 +120,10 @@ def adjust_learning_rate(optimizer, epoch):
 
 
 def init_path(args):
-    args.save_path = os.path.join(args.save_path, str(args.dataset), 'layers' + str(args.num_layers) +
+    if not args.comparable_DNN:
+        args.save_path = os.path.join(args.save_path, str(args.dataset), 'layers' + str(args.num_layers) +
                                   '_channels' + str(args.channels) + '_beta' + str(args.beta) + '_gamma' + str(args.gamma))
-    if args.comparable_DNN:
+    elif args.comparable_DNN:
         args.save_path = os.path.join(args.save_path, str(args.dataset), 'TraditionalDNN')
     print(args.save_path)
     if not os.path.exists(args.save_path):
