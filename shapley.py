@@ -131,16 +131,17 @@ def init_path(args):
 
 
 def get_path(args, str, index=0):
+    path_dir = f"layers{args.num_layers}_channels{args.channels}_beta{args.beta}_gamma{args.gamma}"
     if str == 'harsanyinet':
         filename = f"harsanyinet_{index}"
-        shapley_path = os.path.join(args.save_path, "HarsanyiNet", filename)
+        shapley_path = os.path.join(args.save_path, args.dataset, path_dir, "HarsanyiNet", filename)
         if not os.path.exists(shapley_path):
             if not os.path.exists(os.path.join(args.save_path, "HarsanyiNet")):
                 os.makedirs(os.path.join(args.save_path, "HarsanyiNet"))
 
     elif str == 'sampling':
         filename = f"sampling_{args.runs}_{index}"
-        shapley_path = os.path.join(args.save_path, "Sampling", filename)
+        shapley_path = os.path.join(args.save_path, args.dataset, path_dir, "Sampling", filename)
         if not os.path.exists(shapley_path):
             if not os.path.exists(os.path.join(args.save_path, "Sampling")):
                 os.makedirs(os.path.join(args.save_path, "Sampling"))
